@@ -88,7 +88,7 @@ Basic purpose of Containerization: To package the code with all its libraries an
 
 5. When the docker engine runs this docker image, a container will be created which will be in running status. Check using **```docker ps```** command.
 
-6. Now, we can test the app by navigating to http://localhost:5000/apidocs/
+6. Now, we can test the app locally while the container is running by navigating to http://localhost:5000/apidocs/
 
 7. Once you stop the container, the web app will no longer open. To stop the docker image use: 
     
