@@ -25,16 +25,31 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
 
 
 ## Set Up and Test Application Locally
-1. Clone the 'House-Price-Prediction' folder in your local system using git command: *``` git clone ```*.
+1. Clone the 'House-Price-Prediction' folder in your local system using git command: **``` git clone ```**.
 
-2. You can run the pricepredmodel.py file using **```python pricepredmodel.py```** command which will generate the model.pkl file in your current working directory or you can use the trained model - 'model.pkl' present in folder.
+2. First, we need to generate the ML model. For this, you can execute the pricepredmodel.py file using the following command:
+            
+                  ```python pricepredmodel.py```
 
-3. To test the Web Application, run **```app.py```** command. Navigate to the URL (should be http://0.0.0.0:5000) displayed in the output console. It should open up a web page displaying "Welcome to the Home Page". (Note: Make sure that the model.pkl and app.py files are located in the same directory).
 
-4. We can test the API and make predictions using curl requests. Or we can use POSTMAN (https://www.getpostman.com/) to make prediction for a single user input data by sending a GET request to http://localhost:5000/predict_userinput/ and make predictions for a file input by sending a POST request to http://localhost:5000/predict_fileinput url.
+   This will generate the model.pkl file in your current working directory or you can download and use the trained model - 'model.pkl' present in the folder.
+
+                  ```This project uses Python 3.8.5 version```
+            
+
+3. We have created a web application using Swagger and Flask frameworks to serve ML model as REST API. To run the Flask Web Application, execute the following command:
+                  
+                  ```python app.py```
+                  
+ 
+4. Navigate to the URL (should be http://0.0.0.0:5000) displayed in the output console. It should open up a web page displaying "Welcome to the Home Page". 
+
+            Note: Make sure that the model.pkl and app.py files are located in the same directory
+
+5. We can test the API and make predictions using curl requests. Or we can use POSTMAN (https://www.getpostman.com/) to make prediction for a single user input data by sending a GET request to http://localhost:5000/predict_userinput/ and make predictions for a file input by sending a POST request to http://localhost:5000/predict_fileinput url.
 (For  more details please refer the file present inside the documentation folder). 
 
-5. We can also test the application and make price predictions on the web browser by navigating to http://localhost:5000/apidocs/. (For  more details please refer the file present inside the documentation folder).
+6. We can also test the application and make price predictions on the web browser by navigating to http://localhost:5000/apidocs/. (For  more details please refer the file present inside the documentation folder).
 
 
 
@@ -49,7 +64,7 @@ Basic purpose of Containerization: To package the code with all its libraries an
 
 3. Build the Docker by running the build command: 
             
-           docker build -t image-name .
+            docker build -t image-name .
    
    Docker image will be created. Check using **```docker images```** command.
 
