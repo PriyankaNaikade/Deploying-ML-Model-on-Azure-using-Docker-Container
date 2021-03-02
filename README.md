@@ -58,8 +58,8 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
       - To make prediction for a single user input data we need to send a GET request to http://localhost:5000/predict_userinput/ URL
       - To make predictions for a file input we need to create a POST request by selecting the file input and send POST request to http://localhost:5000/predict_fileinput URL 
   
-  We have the app routed to 2 different paths based on the functionality for each of those methods.
-(For  more details please refer the file present inside the documentation folder). 
+   We have the app routed to 2 different paths based on the functionality for each of those methods.
+   (For  more details please refer the file present inside the documentation folder). 
 
 7. We can also test the application and make price predictions on the web browser by navigating to http://localhost:5000/apidocs/. (For  more details please refer the file present inside the documentation folder).
 
