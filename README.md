@@ -1,5 +1,5 @@
 # Deploying-ML-Model-on-Azure-using-Docker-Container
-Building ML model, Creating an API for the model using Flask, Dockerizing Flask Web App, and Deploying on Azure
+Involves Building an ML model, Creating an API for the model using Flask, Dockerizing Flask Web Application, and Deploying on Azure Cloud Platform.
 
 
 
