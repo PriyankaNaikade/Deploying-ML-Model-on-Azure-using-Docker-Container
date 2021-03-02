@@ -52,7 +52,11 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
 
 5. We can test the API and make predictions using curl requests or via POSTMAN (https://www.getpostman.com/) 
 
-6. In POSTMAN to make prediction for a single user input data we need to send a GET request to http://localhost:5000/predict_userinput/ url and to make predictions for a file input we need to send a POST request to http://localhost:5000/predict_fileinput url since we have the app routed to 2 different path based on the functionality of each of those methods.
+6. Testing API using POSTMAN: 
+      - To make prediction for a single user input data we need to send a GET request to http://localhost:5000/predict_userinput/ URL
+      - To make predictions for a file input we need to create a POST request by selecting the file input and send POST request to http://localhost:5000/predict_fileinput URL 
+  
+  We have the app routed to 2 different paths based on the functionality for each of those methods.
 (For  more details please refer the file present inside the documentation folder). 
 
 7. We can also test the application and make price predictions on the web browser by navigating to http://localhost:5000/apidocs/. (For  more details please refer the file present inside the documentation folder).
@@ -66,7 +70,7 @@ Basic purpose of Containerization: To package the code with all its libraries an
 #### Dockerizing the Flask Web App
 1. Install the docker desktop app and make sure it works fine locally.
 
-2. Navigate to your working directory (all the files should exist in the same folder - Dockerfile, requirements, model app files)
+2. Navigate to your project/working directory (all the files should exist in the same folder - Dockerfile, requirements, model app files)
 
 3. Build the Docker by running the build command: 
             
@@ -96,7 +100,14 @@ Basic purpose of Containerization: To package the code with all its libraries an
 
 #### Publish the Docker Container to Docker Hub
 We have to push the docker container that we created in our local system to a public repository in docker hub, so that it can be accessed from anywhere and finally deploy it on the cloud. Else we would have to create a new container again in Azure.
-To do this, Refer Step-6 in the file present in the Documentation folder.
+1. Create a public repository in docker hub.
+
+2. Tag the docker image to the repository.
+
+3. Push the docker image to the repository.
+
+For execution commands, please refer Step-6 in the file present in the Documentation folder.
+
 
 #### Create a Web App Service on Azure Portal
 1. Login to Azure Portal. On the home page, select 'Create a resource' and then search & select Web App service for hosting the docker container that we pushed in the hub. 
