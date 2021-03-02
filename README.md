@@ -24,6 +24,8 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
 
 3. Documentation Folder consists of a file describing the end-to-end ML deployment procedure in a detailed manner.
 
+4. Notebook Folder consists of the jupyter notebook file for the house price prediction model. Same as pricepredmodel.py except for the data analysis, visualizations plots and output of cells visible for better understanding the model building process.
+
 
 
 
