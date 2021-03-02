@@ -83,8 +83,8 @@ To do this, Refer Step-6 in the file present in the Documentation folder.
 2. Enter 'Project Details' by seleting an appropriate plan and resource group.
 
 3. Enter 'Instance Details' -
-        - Publish - Docker
-        - OD - Linux
+      - Publish - Docker
+      - OS - Linux
 
 4. Navigate to Docker and provide the its details
         - Image Source - Docker Hub
