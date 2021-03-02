@@ -25,7 +25,7 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
 
 
 ## Set Up and Test Application Locally
-1. Clone the 'House-Price-Prediction' folder in your local system.
+1. Clone the 'House-Price-Prediction' folder in your local system using git command: *``` git clone ```*.
 
 2. You can run the pricepredmodel.py file using **```python pricepredmodel.py```** command which will generate the model.pkl file in your current working directory or you can use the trained model - 'model.pkl' present in folder.
 
@@ -73,8 +73,8 @@ Basic purpose of Containerization: To package the code with all its libraries an
 
 ## Host the Dockerized Flask Web App on Azure
 
-#### Publish the docker container to docker hub
-We have to push the docker container that we created in our local system to a public repository in docker hub, so that it can be accessed from anywhere and deploy it on cloud. Else we would have to create a new container again in Azure.
+#### Publish the Docker Container to Docker Hub
+We have to push the docker container that we created in our local system to a public repository in docker hub, so that it can be accessed from anywhere and finally deploy it on the cloud. Else we would have to create a new container again in Azure.
 To do this, Refer Step-6 in the file present in the Documentation folder.
 
 #### Create a Web App Service on Azure Portal
