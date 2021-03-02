@@ -40,7 +40,7 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
 
 
 ## Containerize the Flask Web App using Docker and Test locally
-Basic purpose of Containerization: To package the code with all its libraries and dependencies into a single container so that the application works the way when it is moved from one computing environment to the other, say from dev -> test/prod environment. 
+Basic purpose of Containerization: To package the code with all its libraries and dependencies into a single container so that the application works the same way when it is moved from one computing environment to the other without , say from dev -> test/prod environment. 
 
 #### Dockerizing the Flask Web App
 1. Install the docker desktop app and make sure it works fine locally.
