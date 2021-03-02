@@ -17,7 +17,8 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
       - **requirements.txt** - In this file, we specify the dependencies fo the application, i.e., list of modules and its specific version.
       - **Dockerfile** - This file consists of set of instructions needed to create a docker image, when run generates its live instance alias docker container (that will package the applications and its dependencies together).
 
-2. Test Data File Folder consists of a test file for testing the application.
+2. Test Data File Folder consists of a test file (with 2 sample records) for testing the application.
+
 3. Documentation Folder consists of a file describing the end-to-end ML deployment procedure in a detailed manner.
 
 
@@ -30,9 +31,10 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
 
 3. To test the Web Application, run **```app.py```** command. Navigate to the URL (should be http://0.0.0.0:5000) displayed in the output console. It should open up a web page displaying "Welcome to the Home Page". (Note: Make sure that the model.pkl and app.py files are located in the same directory).
 
-4. We can test the API and make predictions using curl requests. Or we can use POSTMAN (https://www.getpostman.com/) to make prediction for a single user input data by sending a GET request to http://localhost:5000/predict_userinput/ and make predictions for a file input by sending a POST request to http://localhost:5000/predict_fileinput url. (For  more details please refer the file present inside the documentation folder). 
+4. We can test the API and make predictions using curl requests. Or we can use POSTMAN (https://www.getpostman.com/) to make prediction for a single user input data by sending a GET request to http://localhost:5000/predict_userinput/ and make predictions for a file input by sending a POST request to http://localhost:5000/predict_fileinput url.
+(For  more details please refer the file present inside the documentation folder). 
 
-5. We can also test the application and make predictions on the web browser by navigating to http://localhost:5000/apidocs/. (For  more details please refer the file present inside the documentation folder).
+5. We can also test the application and make price predictions on the web browser by navigating to http://localhost:5000/apidocs/. (For  more details please refer the file present inside the documentation folder).
 
 
 
@@ -94,7 +96,7 @@ To do this, Refer Step-6 in the file present in the Documentation folder.
 
 7. Once the deployment is done -> 'Go to Resource' -> Check the URL and test it. It should open 'Welcome to Home Page'
 
-8. To make the predictions, append '/apidocs/' at the end of the url, i.e., "[https://***********.azurewebsites.net/apidocs/](url)".
+8. To use the app for making the house price predictions, append '/apidocs/' at the end of the url, i.e., "[https://***********.azurewebsites.net/apidocs/](url)".
 
 9. Once you're done with testing the application/making predictions, make sure to stop the service (You do not want to use up all the resources).
 
