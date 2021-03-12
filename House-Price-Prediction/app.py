@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 import pandas as pd
 import pickle
 
@@ -18,7 +18,7 @@ model = pickle.load(pickle_in)
 # Adding a decorator. This will be the root path for url, i.e., it will trigger this home page first
 @app.route('/')
 def homepage():
-    return "Welcome to the Home Page"
+    return render_template("homepage.html")
 
 
 # Define a function to trigger the model prediction for a single line input or user entered input values
