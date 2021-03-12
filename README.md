@@ -1,5 +1,6 @@
 # Deploying-ML-Model-on-Azure-using-Docker-Container
 Involves Building an ML model, Creating an API for the model using Flask, Dockerizing Flask Web Application, and Deploying on Azure Cloud Platform.
+Demonstarted an example for Continuous Integration and Continuous Deployment (CI/CD) via Git, DockerHub abd Azure Web Service.
 
 
 
@@ -19,6 +20,8 @@ This repo demonstrates how to deploy a machine learning model on Azure as a webs
       - **requirements.txt** - In this file, we specify the dependencies of the application, i.e., list of modules and its specific version.
       
       - **Dockerfile** - This file consists of set of instructions needed to create a docker image, when run generates its live instance alias docker container (that will package the applications and its dependencies together).
+      
+      - **templates/homepage.html** - HTML file used for application's homepage. (Used for demonstrating CI/CD)  
 
 2. Test Data File Folder consists of a test file (with 2 sample records) for testing the application.
 
@@ -138,4 +141,16 @@ For more details regarding this part, please refer Step-7 in the file present in
 
 
 
+## Continuous Integration and Continuous Deployment (CI/CD)
 
+1. Azure Web Service Settings: To ensure continuous integration and deployment, Go to Deployment Center -> Set Continuous Deployment (CD) option as ‘On’. (Or) Go to Container settings -> set CD = ‘On’  
+
+2. Modify the code. In our case, we modified the homepage and added a button that will navigate to the swagger apidoc's webpage. This required adding a new file under templates folder and updating the app.py file.
+
+3. Docker Hub settings: Link the docker hub account to your git hub account under dockerhub account settings. Configure the automated build settings for the image available in the public repository (Refer the document for more details). This is done so that whenever there is a new push in the git repository the docker hub will automatically initiate a new build creation i.e., update the existing docker image. 
+
+4. Push the latest code files to the git repo.
+
+5. The build creation gets initiated automatically in the dockerhub.
+
+6. Upon its successfull creation, we can visit the azure web app services and click on the url to check the modified application. 
