@@ -153,4 +153,4 @@ For more details regarding this part, please refer Step-7 in the file present in
 
 5. The build creation gets initiated automatically in the dockerhub.
 
-6. Upon its successfull creation, we can visit the azure web app services and click on the url to check the modified application. 
+6. Upon successful docker build creation, we can visit the azure web app services and click on the url to check the modified application. 
